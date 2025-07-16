@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Meus Jogos | Code Renan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: #00ff88;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .game-card {
+      width: 100px;
+      height: 100px;
+      background-color: #1a1a1a;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .game-card:hover {
+      background-color: #00ff88;
+      color: #0f0f0f;
+      transform: scale(1.05);
+    }
+
+    .game-card img {
+      width: 100px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      image-rendering: pixelated;
+    }
+
+    .game-card a {
+      text-decoration: none;
+      color: inherit;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎮 Meus Jogos</h1>
+
+  <div class="grid">
+    <div class="game-card">
+      <a href="https://renanlucas-on.github.io/caca-bugs/">
+        <img src="bug.png" alt="Caça Bugs">
+        Caça Bugs
+      </a>
+    </div>
+
+  </div>
+</body>
+</html>
