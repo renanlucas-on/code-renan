@@ -25,7 +25,7 @@
       justify-content: left;
     }  
 
-    .game-caca-bugs {
+    .game-card {
       width: 100px;
       height: 100px;
       background-color: #1a1a1a;
@@ -35,72 +35,47 @@
       transition: 0.3s;
     }
 
-    .game-caca-bugs:hover {
+    .game-card:hover {
       background-color: #00ff88;
       color: #0f0f0f;
       transform: scale(1.05);
     }
 
-    .game-caca-bugs img {
+    .game-card img {
       width: 100px;
       border-radius: 8px;
       margin-bottom: 10px;
       image-rendering: pixelated;
     }
 
-    .game-caca-bugs a {
+    .game-card a {
       text-decoration: none;
       color: inherit;
       font-weight: bold;
     }
 
-    .game-evade-o-bug {
-      width: 100px;
-      height: 100px;
-      background-color: #1a1a1a;
-      padding: 15px;
-      border-radius: 10px;
-      text-align: center;
-      transition: 0.3s;
-    }
-
-    .game-evade-o-bug:hover {
-      background-color: #00ff88;
-      color: #0f0f0f;
-      transform: scale(1.05);
-    }
-
-    .game-evade-o-bug img {
-      width: 100px;
-      border-radius: 8px;
-      margin-bottom: 10px;
-      image-rendering: pixelated;
-    }
-
-    .game-evade-o-bug a {
-      text-decoration: none;
-      color: inherit;
-      font-weight: bold;
-    }
   </style>
 </head>
 <body>
   <h1>🎮 Meus Jogos</h1>
 
-  <div class="grid">
-    <div class="game-caca-bugs">
-      <a href="https://renanlucas-on.github.io/caca-bugs/">
-        <img src="img/bug.png" alt="Caça Bugs">
-        Caça Bugs
-      </a>
-    </div>
-
-    <div class="game-evade-o-bug">
-      <a href="https://renanlucas-on.github.io/evade-o-bug/">
-        <img src="img/logo_eob.png" alt="Caça Bugs">
-        Caça Bugs
-    </div>
-
+<div class="grid">
+  <!-- Caça Bugs -->
+  <div class="game-card">
+    <a href="https://renanlucas-on.github.io/caca-bugs/">
+      <img src="img/bug.png" alt="Caça Bugs">
+      Caça Bugs
+    </a>
   </div>
+
+  <!-- Evade o Bug -->
+  <div class="game-card">
+    <a href="https://renanlucas-on.github.io/code-renan/evade-o-bug/">
+      <img src="img/logo_eob.png" alt="Evade o Bug">
+      Evade o Bug
+    </a>
+  </div>
+</div>
+
 </body>
 </html>
