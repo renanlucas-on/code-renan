@@ -20,11 +20,12 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, auto));
       gap: 20px;
-    }
+      justify-content: left;
+    }  
 
-    .game-card {
+    .game-caca-bugs {
       width: 100px;
       height: 100px;
       background-color: #1a1a1a;
@@ -34,20 +35,49 @@
       transition: 0.3s;
     }
 
-    .game-card:hover {
+    .game-caca-bugs:hover {
       background-color: #00ff88;
       color: #0f0f0f;
       transform: scale(1.05);
     }
 
-    .game-card img {
+    .game-caca-bugs img {
       width: 100px;
       border-radius: 8px;
       margin-bottom: 10px;
       image-rendering: pixelated;
     }
 
-    .game-card a {
+    .game-caca-bugs a {
+      text-decoration: none;
+      color: inherit;
+      font-weight: bold;
+    }
+
+    .game-evade-o-bug {
+      width: 100px;
+      height: 100px;
+      background-color: #1a1a1a;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .game-evade-o-bug:hover {
+      background-color: #00ff88;
+      color: #0f0f0f;
+      transform: scale(1.05);
+    }
+
+    .game-evade-o-bug img {
+      width: 100px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      image-rendering: pixelated;
+    }
+
+    .game-evade-o-bug a {
       text-decoration: none;
       color: inherit;
       font-weight: bold;
@@ -58,11 +88,17 @@
   <h1>🎮 Meus Jogos</h1>
 
   <div class="grid">
-    <div class="game-card">
+    <div class="game-caca-bugs">
       <a href="https://renanlucas-on.github.io/caca-bugs/">
-        <img src="bug.png" alt="Caça Bugs">
+        <img src="img/bug.png" alt="Caça Bugs">
         Caça Bugs
       </a>
+    </div>
+
+    <div class="game-evade-o-bug">
+      <a href="https://renanlucas-on.github.io/evade-o-bug/">
+        <img src="img/logo_eob.png" alt="Caça Bugs">
+        Caça Bugs
     </div>
 
   </div>
